@@ -1,0 +1,24 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "generate README files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allibrodine/ReadMeGenerator.git"
+  },
+  "author": "Alli  Brodine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allibrodine/ReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/allibrodine/ReadMeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
+
+
