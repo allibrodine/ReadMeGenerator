@@ -32,53 +32,40 @@ const questions = [
                     return false;
                 }
             }    
-        },
-        {
-            type: 'confirm',
-            name: 'confirmInstall',
-            message: 'Is there any software that needs to be installed to run the application?',
-            default: true
-        },    
+        },   
         {
             type: 'input',
             name: 'install',
             message: 'Please provide step-by-step insructions on how to get your application up and running.',
-            when: ({ confirmInstall}) => {
-                if (confirmInstall) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
         },
         {
             type: 'input',
             name: 'usage',
             message: 'Please provide instructions on how to use your application.'
         },
-        {
-            type: 'confirm',
-            name: 'confirmCollab',
-            message: 'Are there any other collaborators on your project?',
-            default: true
-        },
+        //{
+            //type: 'confirm',
+            //name: 'confirmCollab',
+            //message: 'Are there any other collaborators on your project?',
+            //default: true
+        //},
         {
             type: 'input',
-            name: 'conllaborate',
-            message: "Please list any other collaborators on your project with links to their Github profiles, links to third-party website sources or a link to any tutorials you migth have used.",
-            when: ({ confirmCollab}) => {
-                if (confirmCollab) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+            name: 'collaborate',
+            message: "Please list any other collaborators on your project including links to their Github profiles, links to third-party website sources or a link to any tutorials you migth have used.",
+            //when: ({ confirmCollab }) => {
+                //if (confirmCollab) {
+                    //return true;
+                //} else {
+                    //return false;
+                //}
+            //}
         },
         {
             type: 'checkbox',
             name: 'license',
             message: 'What license is attached to your project?',
-            choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC', 'Mozilla']
+            choices: ['Apache', 'GNUGPLv3', 'MIT', 'ISC', 'Mozilla']
         },
         {
             type: 'input',
@@ -131,10 +118,10 @@ function writeToFile() {
 writeToFile();
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
 
 
 
