@@ -51,11 +51,11 @@ function generateMarkdown(data) {
 
   ## Table of Contents
   * [Project Description](#description)
-  * [Installation](#install)
+  * [Installation](#installation)
   * [Usage](#usage)
-  * [Collaboration](#collaborate)
+  * [Collaboration](#collaboration)
   * [License](#license)
-  * [Test](#tests)
+  * [Tests](#tests)
   * [Questions](#questions)
   
   ## Description
@@ -73,7 +73,7 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseSection(data.license)}
 
-  ## Test
+  ## Tests
   ${data.tests}
 
   ## Questions
